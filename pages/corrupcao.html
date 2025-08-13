@@ -15,50 +15,50 @@
             <ul class="form-group">
                 <label>Qual é a sua relação com a Organização?</label>
                 <li class="form-option">
-                    <input type="radio" value="funcionario">
+                    <input type="radio" name="relacao" value="funcionario">
                     <label>Funcionário(a)</label>
                 </li>
                 <li class="form-option">
-                    <input type="radio" value="cliente">
+                    <input type="radio" name="relacao" value="cliente">
                     <label>Cliente</label>
                 </li>
                 <li class="form-option">
-                    <input type="radio" value="fornecedor">
+                    <input type="radio" name="relacao" value="fornecedor">
                     <label>Fornecedor</label>
                 </li>
                 <li class="form-option">
-                    <input type="radio" value="outro">
+                    <input type="radio" name="relacao" value="outro">
                     <label>Outros</label>
                 </li>
                 <li class="form-option">
-                    <input type="radio" value="n/i">
+                    <input type="radio" name="relacao" value="n/i">
                     <label>Não informado</label>
                 </li>
             </ul>
             <ul class="form-group">
                 <label>Qual o tipo de Corrupção você deseja relatar?</label>
                 <li class="form-option">
-                    <input type="radio" value="funcionario">
+                    <input type="radio" name="tipo_corrupcao" value="fraude">
                     <label>Fraude</label>
                 </li>
                 <li class="form-option">
-                    <input type="radio" value="cliente">
+                    <input type="radio" name="tipo_corrupcao" value="suborno">
                     <label>Suborno</label>
                 </li>
                 <li class="form-option">
-                    <input type="radio" value="fornecedor">
+                    <input type="radio" name="tipo_corrupcao" value="extorsao">
                     <label>Extorsão</label>
                 </li>
                 <li class="form-option">
-                    <input type="radio" value="outro">
+                    <input type="radio" name="tipo_corrupcao" value="trafico_influencia">
                     <label>Tráfico de influência</label>
                 </li>
                 <li class="form-option">
-                    <input type="radio" value="n/i">
+                    <input type="radio" name="tipo_corrupcao" value="propina">
                     <label>Propina</label>
                 </li>
                 <li class="form-option">
-                    <input type="radio" value="n/i">
+                    <input type="radio" name="tipo_corrupcao" value="outros">
                     <label>Outros incidentes</label>
                 </li>
             </ul>
@@ -80,60 +80,62 @@
                 <ul class="form-group">
                     <label>E esse fato continua ocorrendo?</label>
                     <li class="form-option">
-                        <input type="radio" value="talvez">
+                        <input type="radio" name="continua" value="talvez">
                         <label>Talvez</label>
                     </li>
                     <li class="form-option">
-                        <input type="radio" value="nao">
+                        <input type="radio" name="continua" value="nao">
                         <label>Não</label>
                     </li>
                     <li class="form-option">
-                        <input type="radio" value="sim">
+                        <input type="radio" name="continua" value="sim">
                         <label>Sim</label>
                     </li>
                 </ul>
                 <ul class="form-group">
                     <label>Havia testemunhas?</label>
                     <li class="form-option">
-                        <input type="radio" value="sim">
+                        <input type="radio" name="testemunhas" value="sim">
                         <label>Sim</label>
                     </li>
                     <li class="form-option">
-                        <input type="radio" value="nao">
+                        <input type="radio" name="testemunhas" value="nao">
                         <label>Não</label>
                     </li>
                 </ul>
                 <ul class="form-field">
                     <li>
                         <label class="form-label" for="descricao">Descreva o incidente:</label><br>
-                        <textarea rows="5" cols="40""></textarea>
-                <small>Escreva o máximo de detalhes possível.</small>
-            </li>
-        </ul>
-        <ul class=" form-group">
-            <label>Qual o grau de certeza sobre o fato que você está denunciando?</label>
-            <li class="form-option">
-                <input type="radio" value="sim">
-                <label>Já ouvi dizer</label>
-            </li>
-            <li class="form-option">
-                <input type="radio" value="nao">
-                <label>Tenho a certeza</label>
-            </li>
-            <li class="form-option">
-                <input type="radio" value="nao">
-                <label>Tenho suspeitas</label>
-            </li>
-        </ul>
-        <ul class="form-field">
-            <label class="form-label">Caso você tenha evidências sobre o fato (vídeo, foto, documento, etc), faça o upload do arquivo aqui.</label>
-            <input type="file" id="myfile" name="myfile">
-            <small>O tamanho máximo do arquivo é de 1 Gb</small>
-        </ul>
+                        <textarea rows="5" cols="40"></textarea>
+                        <small>Escreva o máximo de detalhes possível.</small>
+                    </li>
+                </ul>
+                <ul class="form-group">
+                    <label>Qual o grau de certeza sobre o fato que você está denunciando?</label>
+                    <li class="form-option">
+                        <input type="radio" name="grau_certeza" value="ouvi_dizer">
+                        <label>Já ouvi dizer</label>
+                    </li>
+                    <li class="form-option">
+                        <input type="radio" name="grau_certeza" value="certeza">
+                        <label>Tenho a certeza</label>
+                    </li>
+                    <li class="form-option">
+                        <input type="radio" name="grau_certeza" value="suspeita">
+                        <label>Tenho suspeitas</label>
+                    </li>
+                </ul>
+                <ul class="form-field">
+                    <label class="form-label">Caso você tenha evidências sobre o fato (vídeo, foto, documento, etc),
+                        faça o upload do arquivo aqui.</label>
+                    <input type="file" id="myfile" name="myfile">
+                    <small>O tamanho máximo do arquivo é de 1 Gb</small>
+                </ul>
             </ul>
         </fieldset>
         <button class="form-button" type="submit" id="btn-submit">Enviar</button>
     </form>
 </body>
-    <script src="../js/script.js"></script>
+<script src="../js/script.js"></script>
+
 </html>
