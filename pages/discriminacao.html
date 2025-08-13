@@ -1,13 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denunciar Discriminação</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    
+    <form class="form-container">
+        <fieldset>
+            <legend class="form-legend">Fato Ocorrido</legend>
+            <ul class="form-group">
+                <label>Qual é a sua relação com a Organização?</label>
+                <li class="form-option">
+                    <input type="radio" value="funcionario">
+                    <label>Funcionário(a)</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="cliente">
+                    <label>Cliente</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="fornecedor">
+                    <label>Fornecedor</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="outro">
+                    <label>Outros</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="n/i">
+                    <label>Não informado</label>
+                </li>
+            </ul>
+            <ul class="form-group">
+                <label>Qual o tipo Discriminação você deseja relatar?</label>
+                <li class="form-option">
+                    <input type="radio" value="moral">
+                    <label>Raça</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="sexual">
+                    <label>Sexo</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="virtual">
+                    <label>Corrupção - Extorsão</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="juridico">
+                    <label>Etnia</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="outros">
+                    <label>Nacionalidade</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="outros">
+                    <label>Idade</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="outros">
+                    <label>Deficiência</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="outros">
+                    <label>Religião</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="outros">
+                    <label>Orientação Sexual</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="outros">
+                    <label>Orientação Política</label>
+                </li>
+            </ul>
+            <ul class="form-field">
+                <li>
+                    <label class="form-label">Onde ocorreu o incidente?</label>
+                    <input class="form-input" type="text">
+                </li>
+                <li>
+                    <label class="form-label">Quando esse fato ocorreu?</label>
+                    <input class="form-input" type="date">
+                </li>
+                <li>
+                    <label class="form-label">Quem cometeu o incidente?</label>
+                    <input class="form-input" type="text">
+                    <small>Informe o nome da pessoa e, se possível, mais detalhes como o sobrenome, área e
+                        cargo.</small>
+                </li>
+            </ul>
+            <ul class="form-group">
+                <label>E esse fato continua ocorrendo?</label>
+                <li class="form-option">
+                    <input type="radio" value="talvez">
+                    <label>Talvez</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="nao">
+                    <label>Não</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="sim">
+                    <label>Sim</label>
+                </li>
+            </ul>
+            <ul class="form-group">
+                <label>Havia testemunhas?</label>
+                <li class="form-option">
+                    <input type="radio" value="sim">
+                    <label>Sim</label>
+                </li>
+                <li class="form-option">
+                    <input type="radio" value="nao">
+                    <label>Não</label>
+                </li>
+            </ul>
+            <ul class="form-field">
+                <li>
+                    <label class="form-label" for="descricao">Descreva o incidente:</label><br>
+                    <textarea rows="5" cols="40""></textarea>
+                <small>Escreva o máximo de detalhes possível.</small>
+            </li>
+        </ul>
+        <ul class=" form-group">
+            <label>Qual o grau de certeza sobre o fato que você está denunciando?</label>
+            <li class="form-option">
+                <input type="radio" value="sim">
+                <label>Já ouvi dizer</label>
+            </li>
+            <li class="form-option">
+                <input type="radio" value="nao">
+                <label>Tenho a certeza</label>
+            </li>
+            <li class="form-option">
+                <input type="radio" value="nao">
+                <label>Tenho suspeitas</label>
+            </li>
+        </ul>
+        <ul class="form-field">
+            <label class="form-label">Caso você tenha evidências sobre o fato (vídeo, foto, documento, etc), faça o upload do arquivo aqui.</label>
+            <input type="file" id="myfile" name="myfile">
+            <small>O tamanho máximo do arquivo é de 1 Gb</small>
+        </ul>
+        </fieldset>
+    </form>
 </body>
-    <script src="../js/script.js"></script>
+<script src="../js/script.js"></script>
+
 </html>
