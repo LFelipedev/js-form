@@ -85,3 +85,31 @@ ul {
 .form-button:hover {
   background-color: #0A5517;
 }
+
+a:link, a:visited{
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+main{
+  align-items: center;
+  max-width: 700px;
+  height: 100vh;
+  display: flex;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+}
+
+.button-group{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #202124;
+  align-items: center;
+  width: 650px;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 50px;
+  border-radius: 20px;
+}
