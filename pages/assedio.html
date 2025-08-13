@@ -10,9 +10,10 @@
 
 <body>
     <form class="form-container">
-        <ul class="form-group">
-            <fieldset>
-                <legend class="form-legend">Qual é a sua relação com a Organização?</legend>
+        <fieldset>
+            <legend class="form-legend">Fato Ocorrido</legend>
+            <ul class="form-group">
+                <label>Qual é a sua relação com a Organização?</label>
                 <li class="form-option">
                     <input type="radio" value="funcionario">
                     <label>Funcionário(a)</label>
@@ -33,11 +34,9 @@
                     <input type="radio" value="n/i">
                     <label>Não informado</label>
                 </li>
-            </fieldset>
-        </ul>
-        <ul class="form-group">
-            <fieldset>
-                <legend class="form-legend">Que tipo de Assédio Ocorreu</legend>
+            </ul>
+            <ul class="form-group">
+                <label>Que tipo de Assédio Ocorreu</label>
                 <li class="form-option">
                     <input type="radio" value="moral">
                     <label>Assédio Moral</label>
@@ -58,26 +57,25 @@
                     <input type="radio" value="outros">
                     <label>Outros incidentes</label>
                 </li>
-            </fieldset>
-        </ul>
-        <ul class="form-field">
-            <li>
-                <label class="form-label">Onde ocorreu o incidente?</label>
-                <input class="form-input" type="text">
-            </li>
-            <li>
-                <label class="form-label">Quando esse fato ocorreu?</label>
-                <input class="form-input" type="date">
-            </li>
-            <li>
-                <label class="form-label">Quem cometeu o incidente?</label>
-                <input class="form-input" type="text">
-                <small>Informe o nome da pessoa e, se possível, mais detalhes como o sobrenome, área e cargo.</small>
-            </li>
-        </ul>
-        <ul class="form-group">
-            <fieldset>
-                <legend class="form-legend">E esse fato continua ocorrendo?</legend>
+            </ul>
+            <ul class="form-field">
+                <li>
+                    <label class="form-label">Onde ocorreu o incidente?</label>
+                    <input class="form-input" type="text">
+                </li>
+                <li>
+                    <label class="form-label">Quando esse fato ocorreu?</label>
+                    <input class="form-input" type="date">
+                </li>
+                <li>
+                    <label class="form-label">Quem cometeu o incidente?</label>
+                    <input class="form-input" type="text">
+                    <small>Informe o nome da pessoa e, se possível, mais detalhes como o sobrenome, área e
+                        cargo.</small>
+                </li>
+            </ul>
+            <ul class="form-group">
+                <label>E esse fato continua ocorrendo?</label>
                 <li class="form-option">
                     <input type="radio" value="talvez">
                     <label>Talvez</label>
@@ -90,11 +88,9 @@
                     <input type="radio" value="sim">
                     <label>Sim</label>
                 </li>
-            </fieldset>
-        </ul>
-        <ul class="form-group">
-            <fieldset>
-                <legend class="form-legend">Havia testemunhas?</legend>
+            </ul>
+            <ul class="form-group">
+                <label>Havia testemunhas?</label>
                 <li class="form-option">
                     <input type="radio" value="sim">
                     <label>Sim</label>
@@ -103,40 +99,37 @@
                     <input type="radio" value="nao">
                     <label>Não</label>
                 </li>
-            </fieldset>
-        </ul>
-        <ul class="form-field">
-            <li>
-                <label class="form-label" for="descricao">Descreva o incidente:</label><br>
-                <textarea rows="5" cols="40""></textarea>
+            </ul>
+            <ul class="form-field">
+                <li>
+                    <label class="form-label" for="descricao">Descreva o incidente:</label><br>
+                    <textarea rows="5" cols="40""></textarea>
                 <small>Escreva o máximo de detalhes possível.</small>
             </li>
         </ul>
-        <ul class="form-group">
-            <fieldset>
-                <legend class="form-legend">Qual o grau de certeza sobre o fato que você está denunciando?</legend>
-                <li class="form-option">
-                    <input type="radio" value="sim">
-                    <label>Já ouvi dizer</label>
-                </li>
-                <li class="form-option">
-                    <input type="radio" value="nao">
-                    <label>Tenho a certeza</label>
-                </li>
-                <li class="form-option">
-                    <input type="radio" value="nao">
-                    <label>Tenho suspeitas</label>
-                </li>
-            </fieldset>
+        <ul class=" form-group">
+            <label>Qual o grau de certeza sobre o fato que você está denunciando?</label>
+            <li class="form-option">
+                <input type="radio" value="sim">
+                <label>Já ouvi dizer</label>
+            </li>
+            <li class="form-option">
+                <input type="radio" value="nao">
+                <label>Tenho a certeza</label>
+            </li>
+            <li class="form-option">
+                <input type="radio" value="nao">
+                <label>Tenho suspeitas</label>
+            </li>
         </ul>
         <ul class="form-field">
             <label class="form-label">Caso você tenha evidências sobre o fato (vídeo, foto, documento, etc), faça o upload do arquivo aqui.</label>
             <input type="file" id="myfile" name="myfile">
             <small>O tamanho máximo do arquivo é de 1 Gb</small>
         </ul>
+        </fieldset>
         <button class="form-button" type="submit" id="btn-submit">Enviar</button>
     </form>
 </body>
 <script src="../js/script.js"></script>
-
 </html>
