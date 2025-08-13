@@ -53,7 +53,7 @@ ul {
 
 .form-input,
 .form-textarea {
-  width: 100%;
+  width: 95%;
   padding: 10px 12px;
   border: 1px solid #dadce0;
   border-radius: 4px;
@@ -73,7 +73,7 @@ ul {
 }
 
 .form-button {
-  background-color: #1a73e8;
+  background-color: #19882c;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -83,5 +83,5 @@ ul {
 }
 
 .form-button:hover {
-  background-color: #1558b0;
+  background-color: #0A5517;
 }
