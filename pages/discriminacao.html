@@ -15,7 +15,7 @@
             <ul class="form-group">
                 <label>Qual é a sua relação com a Organização?</label>
                 <li class="form-option">
-                    <input type="radio" name="relacao" value="funcionario">
+                    <input type="radio" name="relacao" value="funcionario" required>
                     <label>Funcionário(a)</label>
                 </li>
                 <li class="form-option">
@@ -38,7 +38,7 @@
             <ul class="form-group">
                 <label>Qual o tipo Discriminação você deseja relatar?</label>
                 <li class="form-option">
-                    <input type="radio" name="tipo_discriminacao" value="raca">
+                    <input type="radio" name="tipo_discriminacao" value="raca" required>
                     <label>Raça</label>
                 </li>
                 <li class="form-option">
@@ -81,15 +81,15 @@
             <ul class="form-field">
                 <li>
                     <label class="form-label">Onde ocorreu o incidente?</label>
-                    <input class="form-input" type="text">
+                    <input class="form-input" type="text" required>
                 </li>
                 <li>
                     <label class="form-label">Quando esse fato ocorreu?</label>
-                    <input class="form-input" type="date">
+                    <input class="form-input" type="date" required>
                 </li>
                 <li>
                     <label class="form-label">Quem cometeu o incidente?</label>
-                    <input class="form-input" type="text">
+                    <input class="form-input" type="text" required>
                     <small>Informe o nome da pessoa e, se possível, mais detalhes como o sobrenome, área e
                         cargo.</small>
                 </li>
@@ -97,7 +97,7 @@
             <ul class="form-group">
                 <label>E esse fato continua ocorrendo?</label>
                 <li class="form-option">
-                    <input type="radio" name="continua" value="talvez">
+                    <input type="radio" name="continua" value="talvez" required>
                     <label>Talvez</label>
                 </li>
                 <li class="form-option">
@@ -112,7 +112,7 @@
             <ul class="form-group">
                 <label>Havia testemunhas?</label>
                 <li class="form-option">
-                    <input type="radio" name="testemunhas" value="sim">
+                    <input type="radio" name="testemunhas" value="sim" required>
                     <label>Sim</label>
                 </li>
                 <li class="form-option">
@@ -123,14 +123,14 @@
             <ul class="form-field">
                 <li>
                     <label class="form-label" for="descricao">Descreva o incidente:</label><br>
-                    <textarea rows="5" cols="40"></textarea>
+                    <textarea rows="5" cols="40" required></textarea>
                     <small>Escreva o máximo de detalhes possível.</small>
                 </li>
             </ul>
             <ul class="form-group">
                 <label>Qual o grau de certeza sobre o fato que você está denunciando?</label>
                 <li class="form-option">
-                    <input type="radio" name="grau_certeza" value="ouvi_dizer">
+                    <input type="radio" name="grau_certeza" value="ouvi_dizer" required>
                     <label>Já ouvi dizer</label>
                 </li>
                 <li class="form-option">
@@ -145,7 +145,7 @@
             <ul class="form-field">
                 <label class="form-label">Caso você tenha evidências sobre o fato (vídeo, foto, documento, etc), faça o
                     upload do arquivo aqui.</label>
-                <input type="file" id="myfile" name="myfile">
+                <input type="file" id="myfile" name="myfile" required>
                 <small>O tamanho máximo do arquivo é de 1 Gb</small>
             </ul>
         </fieldset>
